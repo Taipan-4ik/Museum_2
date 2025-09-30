@@ -1,7 +1,20 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import './blocks/header/header.scss';
+@import './blocks/header/top-bar.scss';
+@import './blocks/main/events.scss';
+@import './blocks/main/plan-visit.scss';
+@import './blocks/main/news.scss';
+@import './blocks/main/subscribe.scss';
+@import './blocks/footer.scss';
+@import './page.scss';
+@import './blocks/menu/menu.scss';
+@import './blocks/menu/nav.scss';
 
-body {
-  background: $c-gray;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+

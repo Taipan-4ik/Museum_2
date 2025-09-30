@@ -1,0 +1,53 @@
+.subscribe {
+  margin: 0 20px 80px;
+  display: flex;
+  flex-direction: column;
+
+  &_title {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
+    line-height: 125%;
+    color: #1c1b29;
+    margin-bottom: 20px;
+  }
+
+  &_description {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1c1b29;
+    margin-bottom: 50px;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_mail {
+    all: unset;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;
+  }
+
+  &_submit {
+    all: unset;
+    display: block;
+    height: 60px;
+    background-color: #cd4d31;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #F1F5F4;
+  }
+}

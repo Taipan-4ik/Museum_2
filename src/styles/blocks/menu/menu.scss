@@ -1,0 +1,83 @@
+.menu {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #3f5252;
+  overflow: hidden;
+
+  &_top-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &_selector {
+    all: unset;
+    color: #f1f5f4;
+    appearance: auto;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    &-language {
+      background-color: #504f5e;
+    }
+  }
+
+  &_bottom {
+    margin: 10px 20px 0;
+    display: flex;
+    flex-direction: column;
+    color: #f1f5f4;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+    }
+    &_option {
+      font-family: Raleway;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+    }
+    &_value {
+      font-family: Raleway;
+      font-weight: 600;
+      font-style: SemiBold;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &_nav {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+
+  &_line {
+    width: 100%;
+    height: 1px;
+    background-color: #f1f5f4;
+    margin-bottom: 40px;
+  }
+
+  &_button {
+    all: unset;
+    height: 60px;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #cd4d31;
+  }
+}
+
+.address {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

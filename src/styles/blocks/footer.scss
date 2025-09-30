@@ -1,0 +1,61 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 20px 30px;
+  background-color: #3f5252;
+  color: #f1f5f4;
+
+  &_subtitle {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    vertical-align: middle;
+
+    &-links {
+      font-family: Playfair Display;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &_info {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    vertical-align: middle;
+  }
+
+  &_link {
+    text-decoration: none;
+    color: #f1f5f4;
+  }
+}
+
+.adres {
+  margin: 10px 0 30px;
+}
+
+.schedule {
+  margin: 10px 0 50px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.privacy-terms {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 60px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}

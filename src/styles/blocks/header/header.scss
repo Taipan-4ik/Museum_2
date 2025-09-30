@@ -1,0 +1,61 @@
+.header {
+  background-color: #3f5252;
+  width: 100%;
+
+  &_content {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
+    color: #f1f5f4;
+  }
+
+  &_description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_date {
+    display: block;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 10px;
+  }
+
+  &_title {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  &_theme {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+
+  &_button {
+    all: unset;
+    height: 60px;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: #F1F5F4;
+    background-color: #CD4D31;
+    margin-bottom: 40px;
+  }
+
+  &_girl {
+    width: 245px;
+    margin-bottom: 0px;
+  }
+}
