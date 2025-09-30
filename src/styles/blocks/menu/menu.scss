@@ -15,7 +15,7 @@
     all: unset;
     color: #f1f5f4;
     appearance: auto;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -36,13 +36,13 @@
       flex-direction: column;
     }
     &_option {
-      font-family: Raleway;
+      font-family: Raleway, sans-serif;
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
     }
     &_value {
-      font-family: Raleway;
+      font-family: Raleway, sans-serif;
       font-weight: 600;
       font-style: SemiBold;
       font-size: 16px;
@@ -51,7 +51,7 @@
   }
 
   &_nav {
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
@@ -68,7 +68,7 @@
   &_button {
     all: unset;
     height: 60px;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 600;
     font-size: 16px;
     text-align: center;

@@ -6,7 +6,7 @@
   background-color: #3f5252;
 
   &_title {
-    font-family: Playfair Display;
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 38px;
@@ -16,7 +16,7 @@
   }
 
   &_description {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -29,7 +29,7 @@
     height: 60px;
     background-color: #cd4d31;
     color: #f1f5f4;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 600;
     font-size: 16px;
     text-align: center;

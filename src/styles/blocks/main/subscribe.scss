@@ -4,7 +4,7 @@
   flex-direction: column;
 
   &_title {
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 28px;
@@ -14,7 +14,7 @@
   }
 
   &_description {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -29,7 +29,7 @@
 
   &_mail {
     all: unset;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -44,10 +44,10 @@
     display: block;
     height: 60px;
     background-color: #cd4d31;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
-    color: #F1F5F4;
+    color: #f1f5f4;
   }
 }

@@ -19,7 +19,7 @@
 
   &_date {
     display: block;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -27,14 +27,14 @@
   }
 
   &_title {
-    font-family: Playfair Display;
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 48px;
     margin-bottom: 30px;
   }
 
   &_theme {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -44,7 +44,7 @@
   &_button {
     all: unset;
     height: 60px;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
@@ -56,6 +56,5 @@
 
   &_girl {
     width: 245px;
-    margin-bottom: 0px;
   }
 }

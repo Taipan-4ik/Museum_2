@@ -2,7 +2,7 @@
   margin: 90px 20px 120px;
 
   &_title {
-    font-family: Playfair Display;
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 28px;
@@ -20,7 +20,7 @@
   }
 
   &_date {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -29,7 +29,7 @@
 
   &_name {
     margin-bottom: 20px;
-    font-family: Playfair Display;
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 20px;
@@ -38,7 +38,7 @@
   }
 
   &_description {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -48,7 +48,7 @@
   &_all {
     display: flex;
     height: 60px;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
