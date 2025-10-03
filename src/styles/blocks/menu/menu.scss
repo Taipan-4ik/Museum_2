@@ -1,14 +1,26 @@
 .menu {
   box-sizing: border-box;
-  height: 100vh;
+  height: 100%;
   background-color: #3f5252;
   overflow: hidden;
+
+  @include respond(tablet) {
+    overflow: auto;
+  }
+
+  @include respond(desktop) {
+    overflow: hidden;
+  }
 
   &_top-options {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    @include respond(tablet) {
+      gap: 40px;
+    }
   }
 
   &_selector {
@@ -19,6 +31,12 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     &-language {
       background-color: #504f5e;
@@ -31,16 +49,42 @@
     flex-direction: column;
     color: #f1f5f4;
 
+    @include respond(tablet) {
+      margin: 30px 39px 0;
+      align-items: start;
+      > :last-child {
+        align-self: center;
+      }
+    }
+
+    @include respond(desktop) {
+      margin: 8px 0 0 55px;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 29px;
+    }
+
     &-info {
       display: flex;
       flex-direction: column;
+
+      &--wrapper {
+        @include respond(tablet) {
+          display: flex;
+          align-items: center;
+          gap: 123px;
+          margin-bottom: 50px;
+        }
+      }
     }
+
     &_option {
       font-family: Raleway, sans-serif;
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
     }
+
     &_value {
       font-family: Raleway, sans-serif;
       font-weight: 600;
@@ -48,14 +92,23 @@
       font-size: 16px;
       line-height: 150%;
     }
+
+    &-content-wrapper {
+      @include respond(tablet) {
+        width: 100%;
+      }
+      @include respond(desktop) {
+        flex: 1;
+      }
+    }
   }
 
   &_nav {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
     margin-bottom: 40px;
+
+    @include respond(tablet) {
+      margin-bottom: 50px;
+    }
   }
 
   &_line {
@@ -67,6 +120,7 @@
 
   &_button {
     all: unset;
+    width: 100%;
     height: 60px;
     font-family: Raleway, sans-serif;
     font-weight: 600;
@@ -74,10 +128,56 @@
     text-align: center;
     vertical-align: middle;
     background-color: #cd4d31;
+    transition: background-color 0.3s ease;
+
+    @include respond(tablet) {
+      width: 330px;
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      background-color: #af3419;
+    }
+
+    &:active {
+      background-color: #ea340d;
+    }
+  }
+
+  &_imageBox {
+    display: none;
+
+    @include respond(tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 422px;
+    }
+
+    @include respond(desktop) {
+      width: 624px;
+    }
+  }
+
+  &_man {
+    max-width: 100%;
   }
 }
 
 .address {
   margin-top: 20px;
   margin-bottom: 40px;
+
+  @include respond(tablet) {
+    margin: 0;
+  }
+}
+
+@include respond(tablet) {
+  .menu_selector {
+    order: 2;
+  }
+  .top-bar_cross {
+    order: 1;
+  }
 }

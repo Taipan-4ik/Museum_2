@@ -1,16 +1,21 @@
-.events {
+.upcoming {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
   margin-inline: 20px;
+  margin-bottom: 90px;
 
   @include respond(tablet) {
     margin-inline: 39px;
+    margin-bottom: 100px;
+    position: relative;
   }
 
   @include respond(desktop) {
     margin-inline: 55px;
+    margin-bottom: 110px;
+    position: relative;
   }
 
   &_card {
@@ -21,10 +26,15 @@
     max-width: 280px;
 
     @include respond(tablet) {
-      max-width: 330px;
+      max-width: 690px;
+      flex-direction: row;
+      gap: 10px;
     }
+
     @include respond(desktop) {
-      max-width: 570px;
+      max-width: 1170px;
+      justify-content: start;
+      gap: 30px;
     }
   }
 
@@ -35,9 +45,11 @@
 
     @include respond(tablet) {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
-      gap: 29px;
+      gap: 70px;
+    }
+    @include respond(desktop) {
+      gap: 60px;
     }
   }
 
@@ -68,9 +80,9 @@
       margin-bottom: 75px;
     }
 
-    @include respond(desktop) {
+    @include respond(tablet) {
       font-size: 48px;
-      margin-bottom: 71px;
+      margin-bottom: 70px;
     }
   }
 
@@ -80,7 +92,12 @@
     transition: transform 0.3s ease;
 
     @include respond(tablet) {
-      width: 100%;
+      margin: 0;
+      width: 330px;
+    }
+
+    @include respond(desktop) {
+      width: 370px;
     }
 
     &:hover {
@@ -119,7 +136,7 @@
     color: #504f5e;
     margin-bottom: 30px;
 
-    @include respond(desktop) {
+    @include respond(tablet) {
       margin-bottom: 50px;
     }
   }
@@ -177,6 +194,9 @@
     }
 
     @include respond(desktop) {
+      position: absolute;
+      top: 0;
+      right: 0;
       width: 270px;
     }
 
@@ -195,24 +215,4 @@
       color: #dd836f;
     }
   }
-}
-
-.exhibitions {
-  margin-top: 90px;
-  margin-bottom: 120px;
-
-  @include respond(tablet) {
-    position: relative;
-    margin-top: 100px;
-    margin-bottom: 160px;
-  }
-
-  @include respond(desktop) {
-    margin-top: 110px;
-    margin-bottom: 200px;
-  }
-}
-
-.upcoming {
-  margin-bottom: 90px;
 }

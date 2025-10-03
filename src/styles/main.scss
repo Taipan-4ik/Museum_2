@@ -11,10 +11,16 @@
 @import './page';
 @import './blocks/menu/menu';
 @import './blocks/menu/nav';
+@import './blocks/main/events_upcoming';
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

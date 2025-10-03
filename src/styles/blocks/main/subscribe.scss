@@ -2,6 +2,22 @@
   margin: 0 20px 80px;
   display: flex;
   flex-direction: column;
+  align-self: start;
+
+  @include respond(tablet) {
+    margin: 0 39px 128px;
+  }
+  @include respond(desktop) {
+    width: 1170px;
+    margin: 0 55px 200px;
+    position: relative;
+  }
+
+  &_wrapper {
+    @include respond(desktop) {
+      max-width: 570px;
+    }
+  }
 
   &_title {
     font-family: 'Playfair Display', serif;
@@ -11,6 +27,14 @@
     line-height: 125%;
     color: #1c1b29;
     margin-bottom: 20px;
+
+    @include respond(tablet) {
+      font-size: 40px;
+    }
+    @include respond(desktop) {
+      margin-bottom: 50px;
+      font-size: 48px;
+    }
   }
 
   &_description {
@@ -20,11 +44,21 @@
     line-height: 150%;
     color: #1c1b29;
     margin-bottom: 50px;
+
+    @include respond(desktop) {
+      position: absolute;
+      top: 0;
+      left: 50%;
+    }
   }
 
   &_form {
     display: flex;
     flex-direction: column;
+
+    @include respond(tablet) {
+      width: 450px;
+    }
   }
 
   &_mail {
@@ -49,5 +83,25 @@
     font-size: 16px;
     text-align: center;
     color: #f1f5f4;
+    transition: background-color 0.3s ease;
+
+    @include respond(tablet) {
+      width: 330px;
+    }
+    @include respond(desktop) {
+      width: 270px;
+    }
+
+    &:hover {
+      background-color: #af3419;
+    }
+
+    &:active {
+      background-color: #ea340d;
+    }
+
+    &:disabled {
+      background-color: #dd836f;
+    }
   }
 }

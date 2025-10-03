@@ -8,8 +8,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #f1f5f4;
+    overflow: hidden;
+
+    @include respond(tablet) {
+      padding-left: 39px;
+      padding-right: 39px;
+      align-items: start;
+      > :last-child {
+        align-self: center;
+      }
+    }
+
+    @include respond(desktop) {
+      margin-top: 47px;
+      padding-left: 56px;
+      padding-right: 0px;
+      padding-bottom: 0;
+      height: 100%;
+      flex-direction: row;
+      justify-content: start;
+      align-items: start;
+    }
   }
 
   &_description {
@@ -27,10 +49,18 @@
   }
 
   &_title {
-    font-family: "Playfair Display", serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 48px;
     margin-bottom: 30px;
+
+    @include respond(tablet) {
+      font-size: 72px;
+    }
+
+    @include respond(desktop) {
+      font-size: 96px;
+    }
   }
 
   &_theme {
@@ -49,12 +79,59 @@
     font-size: 16px;
     text-align: center;
     vertical-align: middle;
-    color: #F1F5F4;
-    background-color: #CD4D31;
+    color: #f1f5f4;
+    background-color: #cd4d31;
     margin-bottom: 40px;
+    transition: background-color 0.3s ease;
+
+    @include respond(tablet) {
+      width: 330px;
+    }
+
+    @include respond(tablet) {
+      width: 270px;
+    }
+
+    &:hover {
+      background-color: #af3419;
+    }
+
+    &:active {
+      background-color: #ea340d;
+    }
+
+    &:disabled {
+      background-color: #dd836f;
+    }
+  }
+
+  &_note {
+    display: none;
+
+    @include respond(desktop) {
+      margin-top: 135px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 570px;
+    }
+
+    &-line {
+      flex: 1;
+      height: 1px;
+      background-color: #f1f5f4;
+    }
   }
 
   &_girl {
-    width: 245px;
+    max-width: 245px;
+
+    @include respond(tablet) {
+      max-width: 443px;
+    }
+
+    @include respond(desktop) {
+      max-width: 625px;
+    }
   }
 }
