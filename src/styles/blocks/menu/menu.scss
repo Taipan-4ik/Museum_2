@@ -150,7 +150,7 @@
     @include respond(tablet) {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
       width: 422px;
     }
 
