@@ -160,6 +160,7 @@
   }
 
   &_man {
+    display: block;
     max-width: 100%;
   }
 }
@@ -170,6 +171,16 @@
 
   @include respond(tablet) {
     margin: 0;
+  }
+}
+
+.navigation {
+  text-decoration: none;
+  color: #f1f5f4;
+  transition: all 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 
