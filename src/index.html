@@ -9,7 +9,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <title>Museum 2</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/src/images/icons/favicon.png"
+    />
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -346,10 +351,7 @@
         </a>
       </section>
 
-      <section
-        class="plan-visit"
-        id="Новини"
-      >
+      <section class="plan-visit">
         <div class="plan-visit_wrapper">
           <h2 class="plan-visit_title">
             Сплануйте
@@ -365,7 +367,10 @@
         </div>
       </section>
 
-      <section class="news">
+      <section
+        class="news"
+        id="Новини"
+      >
         <h2 class="news_title">Новини</h2>
 
         <div class="news_wrapper">
@@ -428,6 +433,7 @@
           <form
             action="#"
             class="subscribe_form"
+            onsubmit="this.reset(); return false;"
           >
             <input
               type="email"
@@ -483,25 +489,37 @@
               </a>
             </span>
             <div class="footer_icons">
-              <a href="https://www.facebook.com/?locale=pl_PL" target="_blank">
+              <a
+                href="https://www.facebook.com/?locale=pl_PL"
+                target="_blank"
+              >
                 <img
                   src="./images/icons/facebook.svg"
                   alt="facebook"
                 />
               </a>
-              <a href="https://x.com/" target="_blank">
+              <a
+                href="https://x.com/"
+                target="_blank"
+              >
                 <img
                   src="./images/icons/twitter.svg"
                   alt="twitter"
                 />
               </a>
-              <a href="https://web.telegram.org" target="_blank">
+              <a
+                href="https://web.telegram.org"
+                target="_blank"
+              >
                 <img
                   src="./images/icons/telegram.svg"
                   alt="telegram"
                 />
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
                 <img
                   src="./images/icons/instagram.svg"
                   alt="instagram"

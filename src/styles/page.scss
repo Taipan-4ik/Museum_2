@@ -1,6 +1,7 @@
 .page {
   scroll-behavior: smooth;
 
+
   &__menu {
     position: fixed;
     top: 0;
@@ -24,3 +25,4 @@
 .page:has(.page__menu:target) {
   overflow: hidden;
 }
+
